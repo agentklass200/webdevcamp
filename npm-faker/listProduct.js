@@ -13,7 +13,7 @@ var Shop = function(title){
         }
     }
 
-    this.loadInvetory(10);
+    this.loadInvetory(20);
 }
 
 var Item = function(){
