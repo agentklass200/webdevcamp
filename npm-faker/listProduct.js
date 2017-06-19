@@ -26,6 +26,9 @@ var utils = {
     generateItem : function(id){
         var item = new Item();
         item.id = id;
+        if(id === undefined){
+            item.id = 0;
+        }
         item.name = faker.commerce.productName();
         item.price = faker.commerce.price();
         return item;
