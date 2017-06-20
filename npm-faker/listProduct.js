@@ -3,14 +3,11 @@ var cat = require("cat-me");
 
 //SHOP class
 var Shop = function(title){
-    this.title = title;
-    if(title === undefined){
-        this.title = "My Shop";
-    }
+    this.title = title || "My Shop";
     this.inventory = [];
     
     //Load random items in the inventory
-    this.loadInvetory(15);
+    this.loadInvetory(10);
 }
 
 //loadInventory under Shop class
@@ -32,10 +29,7 @@ var utils = {
     //Generate an item.
     generateItem : function(id){
         var item = new Item();
-        item.id = id;
-        if(id === undefined){
-            item.id = 0;
-        }
+        item.id = id || 0;
         item.name = faker.commerce.productName();
         item.price = "$" + faker.commerce.price();
         return item;
@@ -58,7 +52,7 @@ var utils = {
 }
 
 //Instantiate a Shop object.
-var alecxisShop = new Shop("Alecxis Shop");
+var alecxisShop = new Shop();
 
 utils.displayShop(alecxisShop);
 
