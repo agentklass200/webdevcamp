@@ -9,6 +9,7 @@
   "author": "Alecxis Banag",
   "license": "ISC",
   "dependencies": {
+    "chalk": "^1.1.3",
     "express": "^4.15.3"
   }
 }
