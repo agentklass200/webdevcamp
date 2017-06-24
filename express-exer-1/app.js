@@ -19,9 +19,6 @@ app.get("/speak/:animal", function(req, res){
         case 'dog':
             res.send('Woof Woof!')
             break;
-        case 'alecxis':
-            res.send("I Love You Toni! <3 <3 <3");
-            break;
         default:
             res.send("WEW!");
     }
