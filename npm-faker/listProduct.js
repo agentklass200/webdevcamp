@@ -1,5 +1,8 @@
+"use strict"
 var faker = require("faker");
 var cat = require("cat-me");
+var starwars = require("starwars-me");
+
 
 //SHOP class
 var Shop = function(title){
@@ -58,3 +61,4 @@ utils.displayShop(alecxisShop);
 
 console.log();
 console.log(cat());
+console.log(starwars());
